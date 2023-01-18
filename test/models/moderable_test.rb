@@ -1,7 +1,9 @@
-require "test_helper"
+require 'test_helper'
 
 class ModerableTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test 'should have is_accepted attribut' do
+    moderable = Moderable.create
+
+    refute moderable.valid?
+  end
 end
