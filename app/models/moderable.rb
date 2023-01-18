@@ -1,0 +1,2 @@
+class Moderable < ApplicationRecord
+end
