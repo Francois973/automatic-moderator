@@ -2,8 +2,6 @@ module Moderable
   extend ActiveSupport::Concern
 
   included do
-    attr_accessor :is_accepted
-
     def accepted_content?
       I18n.available_locales = [:en]
       remove_accent = I18n.transliterate(content)
