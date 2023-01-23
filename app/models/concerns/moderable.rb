@@ -16,8 +16,6 @@ module Moderable
       self.is_accepted = true
     end
 
-    private
-
     def format_string_with_attributes
       self.class.attribute_names.map do |attribute|
         send(attribute)
