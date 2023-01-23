@@ -1,6 +1,6 @@
 class ModerableModel < ApplicationRecord
   include Moderable
+  moderate :content
 
   validates :content, presence: true
-  validates :is_accepted, presence: true
 end
