@@ -1,6 +1,6 @@
 <div class="container">
   <h1>Posts</h1>
-  <%= link_to 'Add a content', new_moderable_model_path %>
+  <%= link_to 'Add a content', posts_new_path %>
   <ul>
     <% @posts.each do |text| %>
       <li class="<%= text.is_accepted ? "" : "red-text" %>"><%= display_autorized_content(text.body, text.is_accepted) %></li>
