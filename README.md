@@ -15,7 +15,7 @@ This application works with Ruby on Rails, it has a concern that takes care of t
 
 This part of the concern allows us to accept all attributes without taking into account their names and thus avoid adding lines of code to specify the attributes.
 
-```sh
+```ruby
 module Moderable
   extend ActiveSupport::Concern
   
@@ -35,7 +35,7 @@ As a result, the class method "moderate" can be called on the attributes for whi
 
 Without forgetting the addition of the concern via the "include" in the model
 
-```sh
+```ruby
 class ModerableModel < ApplicationRecord
   include Moderable
   moderate :content
@@ -54,7 +54,7 @@ end
 
 ## How moderation works
 
-```sh
+```ruby
 module Moderable
   extend ActiveSupport::Concern
   included do
@@ -89,31 +89,31 @@ In our case, we consider that a content can be restricted if its probability is 
 
 ### Versions
 
-```sh
+```ruby
 Ruby 3.1.2
 Rails 7.0.4.1
 ```
 ### Clonage
 
-```sh
+```ruby
 git clone git@github.com:Francois973/automatic-moderator.git
 ```
 
 ### Install the depandancies
 
-```sh
+```ruby
 bundle install
 ```
 
 ### Migrate schema of database
 
-```sh
+```ruby
 rails db:migrate
 ```
 
 ### Start 🚀
 
-```sh
+```ruby
 rails server
 ```
 ------> Start [https://localhost:3000](https://localhost:3000) 💎
