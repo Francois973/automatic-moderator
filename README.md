@@ -1,7 +1,5 @@
 # Automatic-moderator
 
-[![forthebadge](https://forthebadge.com/images/badges/made-with-ruby.svg)](https://forthebadge.com)
-
 This application works with Ruby on Rails, it has a concern that takes care of the moderation and can be used for any attributes coming from any model. This way we can avoid duplicating the code in the models (if they need the moderation functionality).
 
 ## Technical informations
