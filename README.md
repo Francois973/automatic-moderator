@@ -1,24 +1,9 @@
-# README
+Automatic-moderator
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![forthebadge](https://forthebadge.com/images/badges/made-with-ruby.svg)](https://forthebadge.com)
 
-Things you may want to cover:
+This application works with Ruby on Rails, it has a concern that takes care of the moderation and can be used for any attributes coming from any model. This way we can avoid duplicating the code in the models (if they need the moderation functionality).
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Languages: Ruby --version 3.1.2   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg" alt="ruby" width="30" height="30"/>
+- Framework: Ruby on Rails --version 7.0.4   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rails/rails-original-wordmark.svg" alt="rails" width="30" height="30" alt="rails"/>
+- Database: Postgresql --version 1.4.4   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="30" height="30" alt="postgresql"/>
