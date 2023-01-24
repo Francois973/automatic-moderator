@@ -89,31 +89,31 @@ In our case, we consider that a content can be restricted if its probability is 
 
 ### Versions
 
-```ruby
+```sh
 Ruby 3.1.2
 Rails 7.0.4.1
 ```
 ### Clonage
 
-```ruby
+```sh
 git clone git@github.com:Francois973/automatic-moderator.git
 ```
 
 ### Install the depandancies
 
-```ruby
+```sh
 bundle install
 ```
 
 ### Migrate schema of database
 
-```ruby
+```sh
 rails db:migrate
 ```
 
 ### Start 🚀
 
-```ruby
+```sh
 rails server
 ```
 ------> Start [https://localhost:3000](https://localhost:3000) 💎
