@@ -1,0 +1,9 @@
+<h1>ModerableModels</h1>
+
+
+<%= link_to 'Add a content', new_moderable_model_path %>
+<ul>
+  <% @moderable_models.each do |text| %>
+    <li class="<%= text.is_accepted ? "" : "red-text" %>"><%= display_autorized_content(text.content, text.is_accepted) %></li>
+  <% end %>
+</ul>

@@ -2,7 +2,7 @@ module Moderable
   extend ActiveSupport::Concern
 
   included do
-    after_create :moderator
+    before_save :moderator
 
     def moderator
       I18n.available_locales = [:en]
@@ -11,6 +11,7 @@ module Moderable
       url = URI("https://moderation.logora.fr/predict?text=#{remove_accent}")
       response = Net::HTTP.get_response(url)
       result = JSON.parse(response.body)
+      ap result
       return unless result['prediction']['0'] < 0.90
 
       self.is_accepted = true
