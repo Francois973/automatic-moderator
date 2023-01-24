@@ -14,7 +14,21 @@
  *= require_self
  */
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 10vw;
+  margin-top: 10vh;
+ }
 
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
  .red-text {
   color: red;
  }
