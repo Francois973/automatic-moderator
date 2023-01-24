@@ -1,0 +1,7 @@
+<h1>Posts</h1>
+
+
+<%= form_with(model: Post) do |form| %>
+  <%= form.text_field :body %>
+  <%= form.submit "Search" %>
+<% end %>
